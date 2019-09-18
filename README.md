@@ -75,6 +75,8 @@ Output: Thresholds to map continuous liver scores to discrete pathologist scores
 
 ## Class activation maps:
 
-1. Run jupyter notebook CNN_class_activation_map.ipynb
-
-![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/class_activation_map_images/test/16_224_606_43_42_cam.png)
+1. Run within jupyter notebook and complete paths inside:
+```
+CNN_class_activation_map.ipynb
+```
+![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/class_activation_map_images/test/16_224_606_47_24_cam.png)
