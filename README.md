@@ -4,7 +4,6 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 
 ## Requirements:
 
-- CUDA compatible GPU
 - Python 3.x
 - Libraries: yaml, keras, tensorflow, matplotlib, pandas, sklearn (plus a number of common libraries, you will find them as imports)
 
