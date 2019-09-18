@@ -11,7 +11,7 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 ## Set-up:
 
 1. Clone this repository to your local machine.
-2. Download images and model weights from: https://osf.io/p48rd/ and extract them under ./model/
+2. Download images, model weights and other files from: https://osf.io/p48rd/ and extract them under ./model/
 
 *Imporant note:* The OSF repository with images and CNN weights will be made public <b>after</b> acceptance of the publication. Contact: fabian.heinemann@boehringer-ingelheim.com if you like to get access before publication.
 
