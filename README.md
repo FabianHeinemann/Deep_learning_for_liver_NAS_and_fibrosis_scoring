@@ -7,8 +7,6 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 - Python 3.x
 - Libraries: yaml, keras, tensorflow, matplotlib, pandas, sklearn (plus a number of common libraries, you will find them as imports)
 
-<
-
 ## Set-up:
 
 1. Clone this repository to your local machine.
