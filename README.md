@@ -18,9 +18,9 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 ## Training a new model:
 
 1. Complete train.yaml (or a copy). A least you need to set:
-..* model_path (Path where the .h5 file with the CNN weights will be stored)
-..* model_file_name (Filename of model)
-..* ground_truth_path (Path where the tiles with the ground truth are located)
+* model_path (Path where the .h5 file with the CNN weights will be stored)
+* model_file_name (Filename of model)
+* ground_truth_path (Path where the tiles with the ground truth are located)
 
 2. Run:
 ``` 
@@ -43,17 +43,20 @@ Scanned liver slide stained with Masson's trichrome and cut into tiles:
 <exp_no> is your experiment id.
 
 2. Complete classify.yaml (or a copy). A least you need to set:
-..* model_path (Path where the .h5 file with the CNN weights is located)
-..* model_file_name (Filename of model)
-..* list_of_classes (add correct names of individual classes for the respective model, see example in yaml)
-..* thresholds_json (Thresholds json file (expected under model path))
-..* ground_truth_path (Path where the tiles with the ground truth are located)
-..* tile_path (Path where the tiles are located)
-..* score_name (Name of the score in output column)
-..* results_path (Path where results are written to)
-..* experiment_name (Name of experiment and readout)
+* model_path (Path where the .h5 file with the CNN weights is located)
+* model_file_name (Filename of model)
+* list_of_classes (add correct names of individual classes for the respective model, see example in yaml)
+* thresholds_json (Thresholds json file (expected under model path))
+* ground_truth_path (Path where the tiles with the ground truth are located)
+* tile_path (Path where the tiles are located)
+* score_name (Name of the score in output column)
+* results_path (Path where results are written to)
+* experiment_name (Name of experiment and readout)
 
 3. Run:
 ``` 
 $python classify.py -c classify.yaml
 ```
+Two files will be created:
+* <experiment_score_name>_summary.csv
+* <experiment_score_name>.csv
