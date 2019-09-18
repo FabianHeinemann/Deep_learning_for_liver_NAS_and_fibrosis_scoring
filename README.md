@@ -5,7 +5,7 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 ## Requirements:
 
 - Python 3.x
-- Libraries: yaml, keras, tensorflow, matplotlib, pandas, sklearn (plus a number of common libraries, you will find them as imports)
+- Libraries: keras, tensorflow, matplotlib, pandas, sklearn, yaml (plus a number of common libraries, you will find them as imports)
 
 ## Set-up:
 
