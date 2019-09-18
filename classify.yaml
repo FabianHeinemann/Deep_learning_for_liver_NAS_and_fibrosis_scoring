@@ -1,6 +1,6 @@
 model:
     # Path where the .h5 file with the CNN weights is located
-    model_path: "./model_data/Liver/NAS/ballooning/model/"
+    model_path: "./model/Liver/NAS/ballooning/model/"
 
     # Filename of model
     model_file_name: "Liver_ballooning_model_V0.9.h5"

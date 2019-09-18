@@ -1,13 +1,13 @@
 model:
     # Path where the .h5 file with the CNN weights will be stored / is located (if load_pretrained == True)
-    model_path: "./model_data/Liver/NAS/ballooning/model/"
+    model_path: "./model/Liver/NAS/ballooning/model/"
     
     # Filename of model
     model_file_name: "Liver_ballooning_model_V0.9.h5"
 
 tiles:
     # Path where the tiles with the ground truth are located    
-    ground_truth_path: "./model_data/Liver/NAS/ballooning/    
+    ground_truth_path: "./model/Liver/NAS/ballooning/    
     
 settings:
     # Max number of epochs to train

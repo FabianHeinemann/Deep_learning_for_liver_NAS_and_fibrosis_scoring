@@ -1,8 +1,8 @@
 settings:
     # Base path of the model
-    model_base_path: "./deep_learning/model_data/Liver/"
+    model_base_path: "./model/Liver/"
     
-    # Fit to test data?
+    # Fit to test data
     test: False
     
     # Fit new thresholds or load them (only if test is false)
