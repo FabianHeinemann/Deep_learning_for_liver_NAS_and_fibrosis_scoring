@@ -11,7 +11,8 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 ## Set-up:
 
 1. Clone this repository to your local machine.
-2. Download images and model weights from: https://osf.io/p48rd/ and extract them under ./model/ 
+2. Download images and model weights from: https://osf.io/p48rd/ and extract them under ./model/
+
 *Imporant note:* The OSF repository with images and CNN weights will be made public <b>after</b> acceptance of the publication. Contact: fabian.heinemann@boehringer-ingelheim.com if you like to get access before publication.
 
 ## Training a new model:
@@ -20,9 +21,10 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 ..* model_path (Path where the .h5 file with the CNN weights will be stored)
 ..* model_file_name (Filename of model)
 ..* ground_truth_path (Path where the tiles with the ground truth are located)
-2. Run
+
+2. Run:
 ``` 
-$python classify.py -c train.yaml
+$python train.py -c train.yaml
 ```
 This will generate a new model file.
 
@@ -39,3 +41,19 @@ Scanned liver slide stained with Masson's trichrome and cut into tiles:
 (Placed under: ./classification_data/<exp_no>/big_tiles/tiles/)
 
 <exp_no> is your experiment id.
+
+2. Complete classify.yaml (or a copy). A least you need to set:
+..* model_path (Path where the .h5 file with the CNN weights is located)
+..* model_file_name (Filename of model)
+..* list_of_classes (add correct names of individual classes for the respective model, see example in yaml)
+..* thresholds_json (Thresholds json file (expected under model path))
+..* ground_truth_path (Path where the tiles with the ground truth are located)
+..* tile_path (Path where the tiles are located)
+..* score_name (Name of the score in output column)
+..* results_path (Path where results are written to)
+..* experiment_name (Name of experiment and readout)
+
+3. Run:
+``` 
+$python classify.py -c classify.yaml
+```
