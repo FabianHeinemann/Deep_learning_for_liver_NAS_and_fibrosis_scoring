@@ -60,3 +60,14 @@ $python classify.py -c classify.yaml
 Two files will be created:
 * <experiment_score_name>_summary.csv
 * <experiment_score_name>.csv
+
+## Determination of new thresholds:
+
+1. Complete fit_threshold_settings.yaml
+
+2. Run:
+``` 
+$python fit_thresholds.py -c fit_threshold_settings.yaml
+```
+
+Output: Thresholds to map continuous liver scores to discrete pathologist scores with minimized error.
