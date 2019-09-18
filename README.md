@@ -7,6 +7,8 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 - Python 3.x
 - Libraries: yaml, keras, tensorflow, matplotlib, pandas, sklearn (plus a number of common libraries, you will find them as imports)
 
+<
+
 ## Set-up:
 
 1. Clone this repository to your local machine.
@@ -70,3 +72,9 @@ $python fit_thresholds.py -c fit_threshold_settings.yaml
 ```
 
 Output: Thresholds to map continuous liver scores to discrete pathologist scores with minimized error.
+
+## Class activation maps:
+
+1. Run jupyter notebook CNN_class_activation_map.ipynb
+
+![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/class_activation_map_images/test/16_224_606_43_42_cam.png)
