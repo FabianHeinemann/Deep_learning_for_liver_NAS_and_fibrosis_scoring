@@ -2,6 +2,13 @@
 
 Repository for the upcoming publication "Deep learning enables pathologist-like scoring of NASH models"
 
+Input: Microscopy images of of mouse or rat liver tissue, stained with Masson's trichrome.
+Result: 
+- Pathologist-like discrete liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
+- Continous liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
+- Spatially resolved data on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
+
+
 ## Requirements:
 
 - Python 3.x
