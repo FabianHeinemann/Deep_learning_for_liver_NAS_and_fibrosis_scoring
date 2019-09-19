@@ -6,7 +6,7 @@ Required input:
 - Tiles of microscopy images of of mouse or rat liver tissue, stained with Masson's trichrome (see below for details on tiles).
 
 Output / result: 
-- Discrete liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis with scores optimized to follow the scores
+- Discrete liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis with scores optimized to follow the scores.
 - Continous liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 - Spatially resolved data on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 
