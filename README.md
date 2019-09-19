@@ -42,10 +42,10 @@ Please note, that trained models for ballooning, inflammation, steatosis and fib
 
 1. Prerequisite: 
 Scanned liver slide stained with Masson's trichrome and cut into tiles:
-* Higher resolution tiles (0.44 mm/px, 299x299 px², for ballooning, inflammation and steatosis)
+* Higher resolution tiles (0.44 µm/px, 299x299 px², for ballooning, inflammation and steatosis)
 (Placed under: ./classification_data/<exp_no>/tiles/tiles/)
 
-* Lower resolution tiles (1.32 mm/px, 299x299 px², for fibrosis)
+* Lower resolution tiles (1.32 µm/px, 299x299 px², for fibrosis)
 (Placed under: ./classification_data/<exp_no>/big_tiles/tiles/)
 
 <exp_no> is your experiment id.
