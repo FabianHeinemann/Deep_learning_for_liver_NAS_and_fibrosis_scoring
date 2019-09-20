@@ -69,7 +69,7 @@ Two files will be created:
 * <experiment_score_name>_summary.csv
 * <experiment_score_name>.csv
 
-## Determination of new thresholds:
+## Determination of new thresholds, and / or computation of evaluation parameters:
 
 1. Complete fit_threshold_settings.yaml
 
@@ -78,7 +78,9 @@ Two files will be created:
 $python fit_thresholds.py -c fit_threshold_settings.yaml
 ```
 
-Output: Thresholds to map continuous liver scores to discrete pathologist scores with minimized error.
+Output: 
+* Thresholds to map continuous liver scores to discrete pathologist scores with minimized error (if fit_new_thresholds = True).
+* Output of various evaluation parameters (mean absolute error, weighted precision, weighted F1, Cohens Kappa) comparing ground truth (NAS and fibrosis score) with computeted result
 
 ## Class activation maps:
 
