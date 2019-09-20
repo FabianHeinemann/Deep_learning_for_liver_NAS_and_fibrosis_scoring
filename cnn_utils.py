@@ -56,7 +56,7 @@ class cnn_utils:
 		""" 	
 		# Base path (below this part should be subfolders for training and validation)
 		self.model_path = model_path
-		self.tile_path = tile_pathju
+		self.tile_path = tile_path
 		
 		# Model name
 		self.model_file_name = model_file_name		
