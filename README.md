@@ -80,7 +80,7 @@ $python fit_thresholds.py -c fit_threshold_settings.yaml
 
 Output: 
 * Thresholds to map continuous liver scores to discrete pathologist scores with minimized error (if fit_new_thresholds = True).
-* Output of various evaluation parameters (mean absolute error, weighted precision, weighted F1, Cohens Kappa) comparing ground truth (NAS and fibrosis score) with computeted result
+* Output of various evaluation parameters (mean absolute error, weighted precision, weighted F1, Cohens Kappa) comparing ground truth of NAS and fibrosis score with computeted result of NAS and fibrosis score
 
 ## Class activation maps:
 
