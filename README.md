@@ -8,7 +8,7 @@ Required input:
 Output / result: 
 - Discrete pathologist-like liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis with scores optimized to follow the scores.
 - Continous liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
-- Spatially resolved data on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
+- Spatial feature distribution of ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 
 ![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/image/Fig1_for_GIT.png)
 
@@ -19,7 +19,7 @@ Output / result:
 
 ## Set-up:
 
-1. Clone this repository to your local machine.
+1. Clone this repository
 2. Download images, model weights and other files from: https://osf.io/p48rd/ and extract them under ./model/
 
 *Important note:* The OSF repository with images and CNN weights will be made public <b>after</b> acceptance of the publication. Contact: fabian.heinemann@boehringer-ingelheim.com if you like to get access before publication (e.g as a reviewer).
