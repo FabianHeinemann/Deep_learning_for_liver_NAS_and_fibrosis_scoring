@@ -2,7 +2,7 @@
 
 Repository for the upcoming publication "Deep learning enables pathologist-like scoring of NASH models".
 
-![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/images/Fig1_for_GIT.png)
+![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/image/Fig1_for_GIT.png)
 
 Required input:
 - Tiles of microscopy images of of mouse or rat liver tissue, stained with Masson's trichrome (see below for details on tiles).
