@@ -2,16 +2,15 @@
 
 Repository for the upcoming publication "Deep learning enables pathologist-like scoring of NASH models".
 
-![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/image/Fig1_for_GIT.png)
-
 Required input:
 - Tiles of microscopy images of of mouse or rat liver tissue, stained with Masson's trichrome (see below for details on tiles).
 
 Output / result: 
-- Discrete liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis with scores optimized to follow the scores.
+- Discrete pathologist-like liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis with scores optimized to follow the scores.
 - Continous liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 - Spatially resolved data on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 
+![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/image/Fig1_for_GIT.png)
 
 ## Requirements:
 
