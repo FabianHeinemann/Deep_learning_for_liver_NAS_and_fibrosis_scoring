@@ -22,7 +22,7 @@ Output / result:
 1. Clone this repository
 2. Download images, model weights and other files from: https://osf.io/p48rd/ and extract them under ./model/
 
-*Important note:* The OSF repository with images and CNN weights will be made public <b>after</b> acceptance of the publication. Contact: fabian.heinemann@boehringer-ingelheim.com if you like to get access before publication (e.g as a reviewer).
+*Important note:* The OSF repository with images and CNN weights will be made public <b>after</b> acceptance of the publication. Contact: fabian.heinemann_AT_boehringer-ingelheim.com if you like to get access before publication (e.g as a reviewer).
 
 ## Training a new model:
 
