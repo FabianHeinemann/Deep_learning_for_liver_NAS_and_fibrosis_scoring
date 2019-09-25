@@ -449,11 +449,17 @@ def main(args):
 		prec = metrics.precision_score(merged_summary[score_str_tmp], merged_summary[score_name], average = "weighted")
 		print("Weighted precision = %.2f" % (prec))
 		
+		rec = metrics.recall_score(merged_summary[score_str_tmp], merged_summary[score_name], average = "weighted")
+		print("Weighted recall = %.2f" % (rec))
+		
 		F1 = metrics.f1_score(merged_summary[score_str_tmp], merged_summary[score_name], average = "weighted")
 		print("Weighted F1 = %.2f" % (F1))
 		
+		acc = metrics.accuracy_score(merged_summary[score_str_tmp], merged_summary[score_name])
+		print("Accuracy = %.2f %%" % (acc*100))
+		
 		cohen_kappa = metrics.cohen_kappa_score(merged_summary[score_str_tmp], merged_summary[score_name])
-		print("Cohen Kappa: %.2f" % (cohen_kappa))		
+		print("Cohen Kappa: %.2f" % (cohen_kappa))	
 		
 		print("N = %d" % (merged_summary.shape[0]))
 			
