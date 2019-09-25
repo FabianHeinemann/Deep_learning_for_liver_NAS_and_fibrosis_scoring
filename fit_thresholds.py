@@ -370,13 +370,13 @@ def main(args):
 
 		if (score_str == "ballooning_score"):
 			score_name = "Ballooning_sub_score"
-			model_path = model_base_path + "Kleiner/ballooning/model/"
+			model_path = model_base_path + "NAS/ballooning/model/"
 		elif (score_str == "inflammation_score"):		
 			score_name = "Inflammation_sub_score"
-			model_path = model_base_path + "Kleiner/inflammation/model/"
+			model_path = model_base_path + "NAS/inflammation/model/"
 		elif (score_str == "steatosis_score"):
 			score_name = "Steatosis_sub_score"
-			model_path = model_base_path + "Kleiner/steatosis/model/"
+			model_path = model_base_path + "NAS/steatosis/model/"
 		elif (score_str == "fibrosis_score"):
 			score_name = "Fibrosis_score"
 			model_path = model_base_path + "fibrosis/model/"
