@@ -67,7 +67,7 @@ def main(args):
 		
 		# Save detailled results
 		file_name_detailled_results = cnn_utils_obj.results_path + experiment_name + "_" + score_name + ".csv"
-		classification_result.to_csv(file_name_detailled_results, index = False, sep = ";", decimal=",")		
+		classification_result.to_csv(file_name_detailled_results, index = False, sep = ";", decimal=".")		
 		print("Details saved to: %s" % (file_name_detailled_results))			
 		
 		# Generate summary results (per experiment, group and animal) and map to pathologist score		
