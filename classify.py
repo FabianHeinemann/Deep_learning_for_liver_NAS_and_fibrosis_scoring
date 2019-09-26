@@ -75,7 +75,7 @@ def main(args):
 		
 		# Save summary
 		file_name_summary_results = cnn_utils_obj.results_path + experiment_name + "_" + score_name + "_summary.csv"
-		summary_result.to_csv(file_name_summary_results, index = False, sep = ";", decimal=",")
+		summary_result.to_csv(file_name_summary_results, index = False, sep = ";", decimal=".")
 		print("Summary saved to: %s" % (file_name_summary_results))
 		
 		# Print elapsed time

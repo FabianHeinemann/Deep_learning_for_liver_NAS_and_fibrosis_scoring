@@ -704,8 +704,7 @@ class cnn_utils:
 						current_result["n_tiles"] = n_tiles                        
 						
 						# Get mean of uncertainty
-						current_col = classification_result_current_e_g_a["uncertainty"]
-						current_col = current_col.str.replace(',', '.').astype({"uncertainty" : float})						
+						current_col = classification_result_current_e_g_a["uncertainty"]						
 						# https://stackoverflow.com/questions/29688168/mean-nanmean-and-warning-mean-of-empty-slice
 						# I expect to see RuntimeWarnings in this block
 						current_result["average_uncertainty"] = np.nan
@@ -715,7 +714,6 @@ class cnn_utils:
 						
 						# Get mean of weighted class
 						current_col = classification_result_current_e_g_a["weighted_class"]
-						current_col = current_col.str.replace(',', '.').astype({"weighted_class" : float})
 						# https://stackoverflow.com/questions/29688168/mean-nanmean-and-warning-mean-of-empty-slice
 						# I expect to see RuntimeWarnings in this block
 						current_result["average_weighted_class"] = np.nan
