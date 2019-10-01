@@ -738,6 +738,9 @@ class cnn_utils:
 			column_names.append(score_name)
 			summary_result = summary_result[column_names]
 			
+			# Set data type of discrete pathologist score to int
+			summary_result[score_name] = summary_result[score_name].astype(int)
+			
 			return summary_result			
 	
 		
