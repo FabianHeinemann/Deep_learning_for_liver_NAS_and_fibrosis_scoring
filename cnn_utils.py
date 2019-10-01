@@ -577,6 +577,10 @@ class cnn_utils:
 			classification_result.at[index, "group"] = group_and_animal[0]
 			classification_result.at[index, "animal"] = group_and_animal[1:]
 			
+		# Set data types of x and y to int
+		classification_result["x"] = classification_result["x"].astype(int)
+		classification_result["y"] = classification_result["y"].astype(int)
+			
 		# Renormalize tiles
 		
 		# Preparation
