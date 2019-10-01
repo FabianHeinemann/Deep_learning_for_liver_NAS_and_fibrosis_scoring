@@ -67,7 +67,7 @@ def main(args):
 		
 		# Save detailled results
 		file_name_detailled_results = cnn_utils_obj.results_path + experiment_name + "_" + score_name + ".csv"
-		classification_result.to_csv(file_name_detailled_results, index = False, sep = ";", decimal=".", float_format='%.4f')		
+		classification_result.to_csv(file_name_detailled_results, index = False, sep = ";", decimal=".", float_format='%.2f')		
 		print("Details saved to: %s" % (file_name_detailled_results))			
 		
 		# Generate summary results (per experiment, group and animal) and map to pathologist score		
@@ -75,7 +75,7 @@ def main(args):
 		
 		# Save summary
 		file_name_summary_results = cnn_utils_obj.results_path + experiment_name + "_" + score_name + "_summary.csv"
-		summary_result.to_csv(file_name_summary_results, index = False, sep = ";", decimal=".", float_format='%.4f')
+		summary_result.to_csv(file_name_summary_results, index = False, sep = ";", decimal=".", float_format='%.2f')
 		print("Summary saved to: %s" % (file_name_summary_results))
 		
 		# Print elapsed time

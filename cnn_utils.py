@@ -742,8 +742,11 @@ class cnn_utils:
 			column_names.append(score_name)
 			summary_result = summary_result[column_names]
 			
-			# Set data type of discrete pathologist score to int
-			summary_result[score_name] = summary_result[score_name].astype(int)
+			# Set data type of discrete pathologist score to float with 0 digits
+			# Workaround to allow NaNs
+			# https://stackoverflow.com/questions/41550746/error-using-astype-when-nan-exists-in-a-dataframe
+			summary_result[score_name] = summary_result[score_name].round(0)
+			summary_result[score_name] = summary_result[score_name].astype(float)		
 			
 			return summary_result			
 	
