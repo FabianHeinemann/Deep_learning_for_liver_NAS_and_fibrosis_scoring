@@ -49,7 +49,7 @@ Scanned liver slide stained with Masson's trichrome and cut into tiles:
 * Lower resolution tiles (1.32 µm/px, 299x299 px², for fibrosis)
 (Placed under: ./classification_data/<exp_no>/big_tiles/tiles/)
 
-<exp_no> is your experiment id.
+ <exp_no> is your experiment id.
 
 
 2. Running the classification:
@@ -62,7 +62,7 @@ $python classify_Kleiner_score.py -c classify.yaml
 ```
 Five files will be created:
 
-A summary:
+Summary:
 * <experiment>_summary.csv
 
 For each score also the full details (containing spatial data):
