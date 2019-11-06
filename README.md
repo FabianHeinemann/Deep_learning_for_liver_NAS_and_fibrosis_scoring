@@ -26,12 +26,14 @@ Output / result:
 
 ## Training a new model:
 
-1. Complete train.yaml (or a copy). A least you need to set:
+**Complete train.yaml (or a copy):** 
+
+A least you need to set:
 * model_path (Path where the .h5 file with the CNN weights will be stored)
 * model_file_name (Filename of model)
 * ground_truth_path (Path where the tiles with the ground truth are located)
 
-2. Run:
+**Start training by running:**
 ``` 
 $python train.py -c train.yaml
 ```
@@ -41,7 +43,7 @@ Please note, that trained models for ballooning, inflammation, steatosis and fib
  
 ## Classification of a scanned liver section:
 
-1. Prerequisite: 
+**Prerequisite**
 Scanned liver slide stained with Masson's trichrome and cut into tiles:
 * Higher resolution tiles (0.44 µm/px, 299x299 px², for ballooning, inflammation and steatosis)
 (Placed under: ./classification_data/<exp_no>/tiles/tiles/)
@@ -52,25 +54,32 @@ Scanned liver slide stained with Masson's trichrome and cut into tiles:
  <exp_no> is your experiment id.
 
 
-2. Running the classification:
+**Setting models, tile location and experiemnt id**
 
-- Complete classify_Kleiner_score.yaml (or a copy).
+* Complete classify_Kleiner_score.yaml (or a copy).
 
-Run:
+**Run:**
 ``` 
-$python classify_Kleiner_score.py -c classify.yaml
+$python classify_Kleiner_score.py -c classify_Kleiner_score.yaml
 ```
-Five files will be created:
+This will create the following files
 
-Summary:
-* <experiment>_summary.csv
+* <exp_no>_summary.csv
+* <exp_no>_Ballooning_sub_score.csv
+* <exp_no>_Inflammation_sub_score.csv
+* <exp_no>_Steatosis_sub_score.csv
+* <exp_no>_Fibrosis_score.csv
 
-For each score also the full details (containing spatial data):
-* <experiment_score_name>.csv
+The first file contains results summarized per liver including discrete pathologist-like scores and continous scores. The last four contain spatial data for each result (full results).
 
-3. Optional: Classify each score induvidually:
+** Alternative (Optional):** 
+
+Classify each score induvidually:
+
+**Set model parameters by completing:**
 Complete classify.yaml (or a copy).
 
+**Run:**
 ``` 
 $python classify.py -c classify.yaml
 ```
