@@ -1,0 +1,21 @@
+model:
+    # Path where the .h5 file with the CNN weights will be stored / is located (if load_pretrained == True)
+    model_path: "./model/Liver/NAS/ballooning/model/"
+    
+    # Filename of model
+    model_file_name: "Liver_ballooning_model_V0.9.h5"
+
+tiles:
+    # Path where the tiles with the ground truth are located    
+    ground_truth_path: "./model/Liver/NAS/ballooning/    
+    
+settings:
+    # Max number of epochs to train
+    max_epochs: 25
+
+    # Automatically split train and validation data
+    do_val_split: True
+    val_fraction: 0.1
+
+    # Generate a confusion matrix and save it
+    generate_confusion_matrix: True

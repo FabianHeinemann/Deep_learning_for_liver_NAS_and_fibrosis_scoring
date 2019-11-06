@@ -1,0 +1,15 @@
+settings:
+    # Base path of the model
+    model_base_path: "./model/Liver/"
+    
+    # Fit to test data
+    test: False
+    
+    # Fit new thresholds or load them (only if test is false)
+    fit_new_thresholds: False    
+    
+    # File name of full results
+    full_results_name: "Liver_ballooning_model_V0.9.csv"
+    
+    # Type of score must be one of 'ballooning_score', 'inflammation_score', 'steatosis_score' or 'fibrosis_score'
+    score_str: "ballooning_score"

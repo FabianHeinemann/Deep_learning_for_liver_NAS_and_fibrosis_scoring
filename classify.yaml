@@ -1,0 +1,33 @@
+model:
+    # Path where the .h5 file with the CNN weights is located
+    model_path: "./model/Liver/NAS/ballooning/model/"
+
+    # Filename of model
+    model_file_name: "Liver_ballooning_model_V0.9.h5"
+
+    # List of classes
+    list_of_classes:
+        - "0"
+        - "1"
+        - "ignore"
+
+    # Thresholds json file (expected under model path)
+    thresholds_json: "ballooning_score_thresholds.json"
+
+tiles:
+    # Path where the tiles are located
+    # Tiles are expected in a subfolder below this folder (e.g. ./tiles/)
+    tile_path: "./classification_data/abc/tiles/" 
+
+results:
+    # Name of the score in output column
+    score_name: "Ballooning_sub_score"
+
+    # Path where results are written to
+    results_path: "./classification_data/abc/" 	
+    
+    # Name of experiment and readout
+    # Two files will be created:
+    # <experiment_score_name>_summary.csv
+    # <experiment_score_name>.csv
+    experiment_name: "abc"
