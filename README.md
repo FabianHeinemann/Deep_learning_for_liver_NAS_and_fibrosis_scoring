@@ -44,19 +44,14 @@ Please note, that trained models for ballooning, inflammation, steatosis and fib
 ## Classification of a scanned liver section:
 
 **Prerequisite**
-Scanned liver slide stained with Masson's trichrome and cut into tiles:
-* Higher resolution tiles (0.44 µm/px, 299x299 px², for ballooning, inflammation and steatosis)
+
+* Higher resolution tiles of Masson trichrome stained liver (0.44 µm/px, 299x299 px², for ballooning, inflammation and steatosis)
 (Placed under: ./classification_data/<exp_no>/tiles/tiles/)
 
-* Lower resolution tiles (1.32 µm/px, 299x299 px², for fibrosis)
+* Lower resolution tiles of Masson trichrome stained liver (1.32 µm/px, 299x299 px², for fibrosis)
 (Placed under: ./classification_data/<exp_no>/big_tiles/tiles/)
 
- <exp_no> is your experiment id.
-
-
-**Setting models, tile location and experiemnt id**
-
-* Complete classify_Kleiner_score.yaml (or a copy).
+* Completed settings file: classify_Kleiner_score.yaml (or a copy).
 
 **Run:**
 ``` 
@@ -72,37 +67,45 @@ This will create the following files
 
 The first file contains results summarized per liver including discrete pathologist-like scores and continous scores. The last four contain spatial data for each result (full results).
 
-**Alternative (optional):** 
+## Alternative (optional): 
+(Classify each score individually:)
 
-Classify each score induvidually:
+**Prerequisite**
 
-**Set model parameters by completing:**
-Complete classify.yaml (or a copy).
+* Higher resolution tiles of Masson trichrome stained liver (0.44 µm/px, 299x299 px², for ballooning, inflammation and steatosis)
+(Placed under: ./classification_data/<exp_no>/tiles/tiles/)
+
+* Lower resolution tiles of Masson trichrome stained liver (1.32 µm/px, 299x299 px², for fibrosis)
+(Placed under: ./classification_data/<exp_no>/big_tiles/tiles/)
+
+* Completed settings file: classify.yaml (or a copy).
 
 **Run:**
 ``` 
 $python classify.py -c classify.yaml
 ```
 Two files will be created:
-* <experiment_score_name>_summary.csv
-* <experiment_score_name>.csv
+* <exp_no_score_name>_summary.csv
+* <exp_no_score_name>.csv
+
+The first file contains results summarized per liver including discrete pathologist-like scores and continous scores. The second file contains spatial data for the score specified in classify.yaml (full results).
 
 ## Determination of new thresholds, and / or computation of evaluation parameters:
 
-1. Complete fit_threshold_settings.yaml
+** Complete fit_threshold_settings.yaml**
 
-2. Run:
+** Run:**
 ``` 
 $python fit_thresholds.py -c fit_threshold_settings.yaml
 ```
-
 Output: 
+
 * Thresholds to map continuous liver scores to discrete pathologist scores with minimized error (if fit_new_thresholds = True).
 * Output of various evaluation parameters (mean absolute error, weighted precision, weighted F1, Cohens Kappa) comparing ground truth of NAS and fibrosis score with computeted result of NAS and fibrosis score
 
 ## Class activation maps:
 
-1. Run within jupyter notebook and complete paths inside:
+** Run within jupyter notebook and complete paths inside:**
 ```
 CNN_class_activation_map.ipynb
 ```
