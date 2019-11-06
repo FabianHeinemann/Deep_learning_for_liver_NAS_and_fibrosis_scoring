@@ -52,10 +52,9 @@ Scanned liver slide stained with Masson's trichrome and cut into tiles:
 <exp_no> is your experiment id.
 
 
-2.1.1. Option 1: Classify all scores at once
+2. Classification of NAS and fibrosis score:
 Complete classify_Kleiner_score.yaml (or a copy).
 
-2.1.2. Run:
 ``` 
 $python classify_Kleiner_score.py -c classify.yaml
 ```
@@ -67,19 +66,9 @@ A summary:
 For each score also the full details (containing spatial data):
 * <experiment_score_name>.csv
 
-2.2.1. Option 2: Classify each score induvidually:
-Complete classify.yaml (or a copy). A least you need to set:
-* model_path (Path where the .h5 file with the CNN weights is located)
-* model_file_name (Filename of model)
-* list_of_classes (add correct names of individual classes for the respective model, see example in yaml)
-* thresholds_json (Thresholds json file (expected under model path))
-* ground_truth_path (Path where the tiles with the ground truth are located)
-* tile_path (Path where the tiles are located)
-* score_name (Name of the score in output column)
-* results_path (Path where results are written to)
-* experiment_name (Name of experiment and readout)
+3. Optional: Classify each score induvidually:
+Complete classify.yaml (or a copy).
 
-2.2.2. Run:
 ``` 
 $python classify.py -c classify.yaml
 ```
