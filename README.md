@@ -52,9 +52,11 @@ Scanned liver slide stained with Masson's trichrome and cut into tiles:
 <exp_no> is your experiment id.
 
 
-2. Classification of NAS and fibrosis score:
-Complete classify_Kleiner_score.yaml (or a copy).
+2. Running the classification:
 
+- Complete classify_Kleiner_score.yaml (or a copy).
+
+Run:
 ``` 
 $python classify_Kleiner_score.py -c classify.yaml
 ```
