@@ -72,7 +72,7 @@ This will create the following files
 
 The first file contains results summarized per liver including discrete pathologist-like scores and continous scores. The last four contain spatial data for each result (full results).
 
-** Alternative (Optional):** 
+**Alternative (optional):** 
 
 Classify each score induvidually:
 
