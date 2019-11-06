@@ -92,9 +92,9 @@ The first file contains results summarized per liver including discrete patholog
 
 ## Determination of new thresholds, and / or computation of evaluation parameters:
 
-** Complete fit_threshold_settings.yaml**
+**Complete fit_threshold_settings.yaml**
 
-** Run:**
+**Run:**
 ``` 
 $python fit_thresholds.py -c fit_threshold_settings.yaml
 ```
@@ -105,7 +105,7 @@ Output:
 
 ## Class activation maps:
 
-** Run within jupyter notebook and complete paths inside:**
+**Run within jupyter notebook and complete paths inside:**
 ```
 CNN_class_activation_map.ipynb
 ```
