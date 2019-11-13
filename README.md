@@ -1,6 +1,6 @@
 # Deep learning for liver NAS and fibrosis scoring
 
-Repository for the upcoming publication "Deep learning enables pathologist-like scoring of NASH models".
+Repository for the upcoming publication "Deep learning enables pathologist-like scoring of NASH models". Nature scientific reports, 2019 (accepted).
 
 **Input:**
 - Tiles of microscopy images of of mouse or rat liver tissue, stained with Masson's trichrome (see below for details on tiles).
@@ -21,8 +21,6 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 
 1. Clone this repository
 2. Download images, model weights and other files from: https://osf.io/p48rd/ and extract all data under ./model/. Some subfolders contain .zip files, which need to be extracted by hand at their respective locations.
-
-*Important note:* The OSF repository with images and CNN weights will be made public <b>after</b> acceptance of the publication. Contact: fabian.heinemann_AT_boehringer-ingelheim.com if you like to get access before publication (e.g as a reviewer).
 
 ## Training a new model:
 
