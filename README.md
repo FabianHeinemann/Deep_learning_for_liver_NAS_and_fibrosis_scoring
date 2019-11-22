@@ -7,7 +7,7 @@ Repository for the upcoming publication "Deep learning enables pathologist-like 
 
 **Output / result:**
 - Discrete pathologist-like liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis with scores optimized to follow the scores of a given ground truth with minimal error (e.g. a pathologist).
-- Continous liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
+- Continuous liver scores on ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 - Spatial feature distribution of ballooning, inflammation, steatosis (NAS-score) and fibrosis.
 
 ![alt text](https://github.com/FabianHeinemann/Deep_learning_for_liver_NAS_and_fibrosis_scoring/blob/master/image/Fig1_for_GIT.png)
@@ -63,7 +63,7 @@ This will create the following files
 * <exp_no>_Steatosis_sub_score.csv
 * <exp_no>_Fibrosis_score.csv
 
-The first file contains results summarized per liver including discrete pathologist-like scores and continous scores. The last four contain spatial data for each result (full results).
+The first file contains results summarized per liver including discrete pathologist-like scores and continuous scores. The last four contain spatial data for each result (full results).
 
 ## Alternative (optional): 
 (Classify each score individually:)
@@ -86,7 +86,7 @@ Two files will be created:
 * <exp_no_score_name>_summary.csv
 * <exp_no_score_name>.csv
 
-The first file contains results summarized per liver including discrete pathologist-like scores and continous scores. The second file contains spatial data for the score specified in classify.yaml (full results).
+The first file contains results summarized per liver including discrete pathologist-like scores and continuous scores. The second file contains spatial data for the score specified in classify.yaml (full results).
 
 ## Determination of new thresholds, and / or computation of evaluation parameters:
 
