@@ -399,6 +399,7 @@ def main(args):
 
 		# Merge table with pathologist scores (ground truth) and classification summary
 		merged_summary = create_merged_summary_table(model_base_path, path_scores_file_name, summary_result)
+		merged_summary.rename(columns={score_name + "_average_weighted_class" : "average_weighted_class"}, inplace = True)
 		
 		############################################################################################################################################
 		# Fit thresholds
