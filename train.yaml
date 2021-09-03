@@ -7,7 +7,7 @@ model:
 
 tiles:
     # Path where the tiles with the ground truth are located    
-    ground_truth_path: "./model/Liver/NAS/ballooning/    
+    ground_truth_path: "./model/Liver/NAS/ballooning/"
     
 settings:
     # Max number of epochs to train
